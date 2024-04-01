@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.grille{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(250deg, rgb(28 21 21 / 80%), black);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 80px;
+    transition: linear 0.4s;
+}
+ @media screen and (max-width: 790px) {
+    .grille{
+        flex-wrap: wrap;
+        align-items: center;
+        display: grid;
+        justify-items: start;
+        transition: linear 0.4s;
+        grid-gap: 0px;
+    }
+ }
+.menuNavigation{
+    
+font-family: cursive;
+    
+padding-right: 10px;
+}
+.titre{padding-bottom: 20px;/* font-family: cursive; */color: lightcoral;font-style: italic;font-size: -webkit-xxx-large;}
+.menu{
+
+    display: flex;
+    grid-gap: 10px;
+}
+.cercle{
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, white, transparent);
+    box-shadow: 1px 1px 6px -3px black;
+    color: black;
+    cursor: pointer;
+    transition: linear 1s;
+}
+
+li.cercle:hover {
+    background: linear-gradient(45deg, white, white);
+    transition: linear 0.8s;
+}
+
+.fondNet{
+    width: 380px;
+    height: 440px;
+    background: #936262;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px 0px lightblue;
+    font-family: cursive;
+    background-image: url('d.png.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+.bottomBox{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    background: rgb(22 4 4 / 75%);
+    border-radius: 20px;
+    color: blanchedalmond;
+    height: 0px;
+    transition: linear 0.4s;
+}
+
+.fondNet:hover > .bottomBox {
+    height: 210px;
+    transition: linear 0.4s;
+}
+.point{
+
+}
+.bottombarre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    margin-block-end: 10px;
+    padding-top: 10px;
+    color: black;
+}
+.button{
+    background: rgb(255 255 255 / 80%);
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    box-shadow: 1px 4px 10px -6px black;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, white, transparent);
+    transition: linear 1s;
+}
+.icone{
+    width: 26px;
+    height: 26px;
+    background: azure;
+    border-radius: 5px;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
